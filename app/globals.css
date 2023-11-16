@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  cursor: none !important;
+}
+
+section {
+  width: full;
+}
+
+.menu__item:hover ~ #cursor {
+  width: 4rem;
+  height: 4rem;
+  background-color: gray;
+  opacity: 0.6;
+  transition: all 0.25s;
+}
